@@ -4,6 +4,27 @@ MapBoxComposer
 This is the home of a small script that will allow you to compose and stick images from
 a MapBox created image.
 
+Purpose
+-------
+Initially the whole purpose of this was to fix a small problem I saw with a website. 
+The awesome people at Tele Geography created a interactive version of their 
+[Submarine Cable Map]
+(http://www.telegeography.com/telecom-maps/submarine-cable-map/index.html).
+The only problem was that it was extremely slow to load tiles when zoomed in at any level.
+After countless minutes of frustration I decided to try and reverse engineer the whole thing
+to download the images and compose them myself for fast browsing. The result is this set 
+of scripts that you see here.
+
+
+Future
+------
+In the future the plan is to expand this to compose any interactive map or image that 
+uses the [MapBox](https://github.com/mapbox).
+
+
+This is a work in progress...
+
+
 Files Purpose
 ------------
 
@@ -38,25 +59,3 @@ TODO: Since each folder is completely independent from each other and the whole
       process takes long then we should turn it into a Makefile and use the -j flag
       or make it parallel in some other way.
       
-Purpose
-=======
-Initially the whole purpose of this was to fix a small problem I saw with a website. 
-The awesome people at Tele Geography created a interactive version of their 
-[Submarine Cable Map]
-(http://www.telegeography.com/telecom-maps/submarine-cable-map/index.html).
-The only problem was that it was extremely slow to load tiles when zoomed in at any level.
-After countless minutes of frustration I decided to try and reverse engineer the whole thing
-to download the images and compose them myself for fast browsing. The result is this set 
-of scripts that you see here.
-
-
-Future
-======
-In the future the plan is to expand this to compose any interactive map or image that 
-uses the [MapBox](https://github.com/mapbox).
-
-
-
-
-This is a work in progress...
-
