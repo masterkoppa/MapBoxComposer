@@ -1,7 +1,7 @@
 import os
 import time
 
-def main():
+def generateMakefile():
 	z = 6
 	allList = []
 	for x in range(64):
@@ -29,13 +29,6 @@ def main():
 			allList.append(str(x) + '_' + str(y+2))
 			allList.append(str(x) + '_' + str(y+3))
 
-			
-
-			#os.system(downloadCmd + download1)
-			#os.system(downloadCmd + download2)
-			#os.system(downloadCmd + download3)
-			#os.system(downloadCmd + download4)
-
 
 			y = y / 4
 	ret = ''
@@ -45,4 +38,4 @@ def main():
 	print 'all: \t ' + ret
 
 if __name__ == '__main__':
-	main()
+	generateMakefile()
